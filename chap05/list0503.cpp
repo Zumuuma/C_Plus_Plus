@@ -1,0 +1,19 @@
+//配列の各要素に１，２，３，４，５を代入して表示（for文）
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int a[5]; //int[5]型の配列（要素型がint型で要素数５の配列）
+
+	for (int i = 0; i < 5; i++)
+	{
+		a[i] = i + 1;
+	}
+	for (int i = 0; i < 5; i++)
+	{
+		cout << "a[" << i << "] = " << a[i] << '\n';
+	}
+}
