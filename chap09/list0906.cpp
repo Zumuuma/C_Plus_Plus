@@ -1,0 +1,21 @@
+//‚×‚«æ’l‚ğ‹‚ß‚é
+
+#include <iostream>
+
+using namespace std;
+
+//---x‚Ìnæ‚ğ•Ô‚·---//
+double power(double x, int n);
+
+int main()
+{
+	double a;
+	int b;
+
+	cout << "a‚Ìbæ‚ğ‹‚ß‚Ü‚·B\n";
+	cout << "À”a : ";
+	cin >> a;
+	cout << "À”b : ";
+	cin >> b;
+	cout << a << "‚Ì" << b << "æ‚Í" << power(a, b) << "‚Å‚·B\n";
+}
