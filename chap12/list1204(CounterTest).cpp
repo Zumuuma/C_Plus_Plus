@@ -1,0 +1,38 @@
+//カウンタクラスCounter（第２版）の利用例
+
+#include <iostream>
+#include "list1203(Counter).h"
+
+using namespace std;
+
+int main()
+{
+	int no;
+	Counter x;
+	Counter y;
+
+	cout << "カウントアップ回数 : ";
+	cin >> no;
+
+	for (int i = 0; i < no; i++) //カウントアップ（xは後置でyは前置）
+	{
+		cout << x++ << ' ' << ++y << '\n';
+	}
+
+	cout << "カウントダウン回数 : ";
+	cin >> no;
+
+	for (int i = 0; i < no; i++) //カウントダウン（xは後置でyは前置）
+	{
+		cout << x-- << ' ' << --y << '\n';
+	}
+
+	if (!x) //論理否定演算子による判定
+	{
+		cout << "xは０です。\n";
+	}
+	else
+	{
+		cout << "xは０ではありません。\n";
+	}
+}
